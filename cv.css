@@ -1,0 +1,45 @@
+.mAccueil {
+	transition:5s;
+}
+
+.mCompetences {
+	transform:rotateZ(288deg); 
+	transition:5s;
+
+}
+
+.mFormation {
+	transform:rotateZ(216deg); 
+	transition:5s;
+
+}
+
+.mExperience {
+	transform:rotateZ(144deg); 
+	transition:5s;
+
+}
+
+.mContact {
+	transform:rotateZ(72deg);
+	transition:5s;
+
+}
+
+.pageAff {
+	position:absolute;
+	top:400px;
+	left:10px;
+	display: inline-block;
+}	
+
+.pageHid {
+	position:absolute;
+	top:400px;
+	left:10px;
+	display:none;
+}
+
+.pages {
+
+}
