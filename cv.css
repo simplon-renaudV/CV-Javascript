@@ -1,45 +1,210 @@
-.mAccueil {
-	transition:5s;
+body 
+{
+	overflow-x: hidden;
+	background:url(images/bg.png) repeat;
 }
 
-.mCompetences {
-	transform:rotateZ(288deg); 
-	transition:5s;
-
+h1
+{
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	color: #294DA6;
+	font-size: 24px;
 }
 
-.mFormation {
-	transform:rotateZ(216deg); 
-	transition:5s;
-
+h2
+{
+	font-family: 'Merriweather', serif;
+	text-align: left;	
+	font-size: 18px;
+	padding-top: 20px;
 }
 
-.mExperience {
-	transform:rotateZ(144deg); 
-	transition:5s;
-
+input
+{
+	width: 100%;
 }
 
-.mContact {
-	transform:rotateZ(72deg);
-	transition:5s;
-
+textarea
+{
+	width: 100%;
+	height: 100px;
 }
 
-.pageAff {
-	position:absolute;
-	top:400px;
-	left:10px;
+article div h2
+{
+	font-family: 'Merriweather', serif;
+	text-align: left;
+	font-size: 15px;
+	margin-left: 10%;
+}
+
+article div ul
+{
+	font-family: 'Merriweather', serif;
+	text-align: left;
+	font-size: 15px;
+	margin-left: 10%;
+}
+
+section
+{
+	padding-top: 20px;
+	position: absolute;
+	font-family: 'Merriweather', serif;
+	font-size: 15px;
+	text-align: left;
+	margin-left: 10%;
+}
+
+.separation
+{
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	margin-top: -15px;
+	border: 1px solid #294DA6;
+}
+
+.firstUL
+{
+	padding-top: 20px;
+}
+
+#formations ul
+{
+	font-family: 'Merriweather', serif;
+	text-align: left;
+	font-size: 15px;
+	margin-left: 10%;
+}
+
+#experiences ul
+{
+	font-family: 'Merriweather', serif;
+	text-align: left;
+	font-size: 15px;
+	margin-left: 10%;
+}
+
+#map
+{
+	padding-top: 20px;
+}
+
+#droite
+{
+	position: fixed;
+	background-color: #294DA6;
+	height: 100%;
+	width: 5%;
+	top: 0%;
+	left: 95%;
+	z-index: 5;
+}
+
+#gauche
+{
+	position: fixed;
+	background-color: #294DA6;
+	height: 100%;
+	width: 5%;
+	top: 0%;
+	left: 0%;
+	z-index: 5;	
+}
+
+#Menu
+{
+	position: absolute;
+	left: 37.75%;
+	z-index: 10;
+}
+
+#photo
+{
+	margin-top: 1%;
+	position: absolute;
+	left: 40%;
+	z-index: 1;
+	background-image:url(images/RenaudVivancos.JPG);
+	overflow: hidden;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
+
+#fleches
+{
+	position: absolute;
+	top: 350px;
+	left: 47%;
 	display: inline-block;
+	width: 100%;
+}
+
+#formulaire
+{
+	left:50%;
+}
+
+#coords
+{
+	left:10%;
+}
+
+#message
+{
+
+}
+.fleche
+{
+	z-index: 100;
+}
+
+.mAccueil
+{
+	transition: 5s;
+}
+
+.mCompetences
+{ 
+	transition: 5s;
+}
+
+.mFormation
+{
+	transition: 5s;
+}
+
+.mExperience
+{ 
+	transition: 5s;
+}
+
+.mContact
+{
+	transition: 5s;
+}
+
+.pageAff
+{
+	position: absolute;
+	top: 400px;
+	left: 0%;
+	width: 100%;
+	display: inline-block;
+	transition: 2s;
+	transition-delay: 2s;
+	transition-timing-function: linear;
 }	
 
-.pageHid {
-	position:absolute;
-	top:400px;
-	left:10px;
-	display:none;
-}
-
-.pages {
-
+.pageHid
+{
+	position: absolute;
+	top: 400px;
+	left:100%;
+	width:100%;
+	transition: 2s;
+	transition-timing-function: linear;
 }

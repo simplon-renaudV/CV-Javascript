@@ -1,18 +1,16 @@
 document.getElementById('flecheH').addEventListener('click', rotation, false);
 document.getElementById('flecheAH').addEventListener('click', rotation, false);
 
+var	arrMenu = ['mAccueil', 'mCompetences', 'mFormation', 'mExperience', 'mContact'];
+var angle = 0;
+
 function rotation(e)
 {
-	arrMenu = ['mAccueil', 'mCompetences', 'mFormation', 'mExperience', 'mContact'];
-
 	var strChoix = document.getElementById('Menu');
 	var intIndex = arrMenu.indexOf(strChoix.className);
 	var strPageActive = arrMenu[intIndex].substr(1, arrMenu[intIndex].length-1);
-	var angle = strChoix.style.transform;
 	
-	console.log(angle);
-
-	document.getElementById(strPageActive).className = ('pageHid pages');
+	document.getElementById(strPageActive).className = ('pageHid');
 
 	if (e.target.id == 'flecheH')
 	{
@@ -24,10 +22,8 @@ function rotation(e)
 		{
 			strChoix.className = arrMenu[intIndex-1];
 		}
-		
-		intIndex = arrMenu.indexOf(strChoix.className);
-		strPageActive = arrMenu[intIndex].substr(1, arrMenu[intIndex].length-1);
-		document.getElementById(strPageActive).className = ('pageAff pages');
+		angle += 72;
+		strChoix.style.transform = 'rotateZ(' + angle + 'deg)';
 	}
 
 	if (e.target.id == 'flecheAH')
@@ -40,9 +36,12 @@ function rotation(e)
 		{
 			strChoix.className = arrMenu[intIndex+1];
 		}
-	
-		var intIndex = arrMenu.indexOf(strChoix.className);
-		var strPageActive = arrMenu[intIndex].substr(1, arrMenu[intIndex].length-1);
-		document.getElementById(strPageActive).className = ('pageAff pages');
+		angle -= 72;
+		strChoix.style.transform = 'rotateZ(' + angle + 'deg)';
+
 	}
+
+	intIndex = arrMenu.indexOf(strChoix.className);
+	strPageActive = arrMenu[intIndex].substr(1, arrMenu[intIndex].length-1);
+	document.getElementById(strPageActive).className = ('pageAff');
 }
